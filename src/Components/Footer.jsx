@@ -14,7 +14,7 @@ const Footer = () => {
         <span>Logo</span>
       </div>
 
-      <img src="" alt="img" />
+      <img className='mt-5' src="./src/assets/Images/iso-9001-2015.svg" alt="img" />
 
       </div>
 <div>

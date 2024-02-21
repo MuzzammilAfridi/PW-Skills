@@ -4,6 +4,7 @@ import Cource from './Components/Cource'
 import PWSkillsLab from './Components/PWSkillsLab'
 import JobPortal from './Components/JobPortal'
 import BecomeAnAffiliate from './Components/BecomeAnAffiliate'
+import HallOfFame from './Components/HallOfFame'
 
 function App() {
   const showCaseData = [
@@ -411,9 +412,315 @@ function App() {
 
   const freqAskQus = [
     {
-      firs:'',
+      qus:'I need to purchase a course. Whom should I contact ?'
+    },
+    {
+      qus:'I am not able to view my enrolled course. What to do/whom to contact ?'
+    },
+    {
+      qus:'What is an experience portal ? How to use it ?'
+    },
+    {
+      qus:'How to get Placements and Job assistance ?'
       
     }
+  ]
+
+  const achiversData = [
+    {
+      img:'./src/assets/Images/accenture.webp'
+    },
+    {
+      img:'./src/assets/Images/adobe.webp'
+    },
+    {
+      img:'./src/assets/Images/amazon.webp'
+    },
+    {
+      img:'./src/assets/Images/capgemini.webp'
+    },
+    {
+      img:'./src/assets/Images/deloitte.webp'
+    },
+    {
+      img:'./src/assets/Images/ey.webp'
+    },
+    {
+      img:'./src/assets/Images/fractal.webp'
+    },
+    {
+      img:'./src/assets/Images/ibm.webp'
+    },
+    {
+      img:'./src/assets/Images/infosys.webp'
+    },
+    {
+      img:'./src/assets/Images/jpmorgan.webp'
+    },
+    {
+      img:'./src/assets/Images/kpmg.webp'
+    },
+    {
+      img:'./src/assets/Images/microsoft.webp'
+    },
+    {
+      img:'./src/assets/Images/myntra.webp'
+    },
+    {
+      img:'./src/assets/Images/oyo.webp'
+    },
+    {
+      img:'./src/assets/Images/paytm.webp'
+    },
+    {
+      img:'./src/assets/Images/pwc.webp'
+    },
+    {
+      img:'./src/assets/Images/salesforce.webp'
+    },
+    {
+      img:'./src/assets/Images/samsung.webp'
+    },
+    {
+      img:'./src/assets/Images/swiggy.webp'
+    },
+    {
+      img:'./src/assets/Images/tcs.webp'
+    },
+    {
+      img:'./src/assets/Images/tvs.webp'
+    },
+    {
+      img:'./src/assets/Images/vmware.webp'
+    },
+    {
+      img:'./src/assets/Images/walmart.webp'
+    },
+    {
+      img:'./src/assets/Images/wipro.webp'
+    },
+    {
+      img:'./src/assets/Images/zomato.webp'
+    },
+  ]
+
+  const achPeopleData =[
+    {
+      img:'./src/assets/Images/AchFirst.jpeg',
+      details: 'Hi All, I am a student of the NOV 2021 batch, I made a good decision by joining the Ineuron classes. A very big thank you to the entire ineuron team And special thanks to Krish Naik and Sudhanshu. It was',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchSecond.jpeg',
+      details: 'Hello everyone I am an undergraduate from SRM University. I got placed in the Tredence Analytics it is all because of the excellent course called full stack data scientist in the ineuron. I enrolled the',
+      name:'sai krishna gorantla',
+      companyName:'Data Analyst, Tredence Analytics'
+    },
+    {
+      img:'./src/assets/Images/AchThird.jpeg',
+      details: 'Ineuron.ai came into existence exactly when I needed it the most. It helped me transition into Data science as Senior Data Engineer at blazeclan technologies and with the help of ineuron courses',
+      name:'Dharmendra kumar Yadav',
+      companyName:'Data Scientist Associate, Cognizant'
+    },
+    {
+      img:'./src/assets/Images/AchFourth.jpeg',
+      details: 'Ineuron.ai came into existence exactly when I needed it the most. It helped me transition into Data science as Senior Data Engineer at blazeclan technologies and with the help of ineuron courses',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchFifth.jpeg',
+      details: 'I have studied from krish YouTube videos and ineuron, which helped me to understand the thorough concepts.',
+      name:'Ayushman Misra',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchSixth.jpeg',
+      details: 'Before Joining iNueron FSDS Course i knew nothing about DS. thank you Sudhanshu Kumar For making it possible for a. Guy from Non Technical background to become a Data Scientist',
+      name:'Somesh Chitranshi',
+      companyName:'Data Scientist, NTT Data Services'
+    },
+    {
+      img:'./src/assets/Images/AchSeventh.jpeg',
+      details: 'I started my career as Data Analyst i worked for 3 years as data analyst after that i met with an accident and took rest for 2 years . After 2 years i took training for data scientist from ineuron and',
+      name:'Retin P Kumar',
+      companyName:'AI Engineer, Accenture'
+    },
+    {
+      img:'./src/assets/Images/AchEight.jpeg',
+      details: 'I was just like one of those government job aspirants (without any vision or guidance) who ended up spending years of their life behind exams like UPSC, SSC, etc, and ended up dead broke and',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Senior Software Engineer, IBM'
+    },
+    {
+      img:'./src/assets/Images/AchNine.jpeg',
+      details: 'I have studied from krish YouTube videos and ineuron, which helped me to understand the thorough concepts.',
+      name:'Ayushman Misra',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchTen.jpeg',
+      details: 'Before Joining iNueron FSDS Course i knew nothing about DS. thank you Sudhanshu Kumar For making it possible for a. Guy from Non Technical background to become a Data Scientist',
+      name:'Somesh Chitranshi',
+      companyName:'Data Scientist, NTT Data Services'
+    },
+    {
+      img:'./src/assets/Images/AchEleven.jpeg',
+      details: 'I started my career as Data Analyst i worked for 3 years as data analyst after that i met with an accident and took rest for 2 years . After 2 years i took training for data scientist from ineuron and',
+      name:'Retin P Kumar',
+      companyName:'AI Engineer, Accenture'
+    },
+    {
+      img:'./src/assets/Images/AchTwelve.jpeg',
+      details: 'I was just like one of those government job aspirants (without any vision or guidance) who ended up spending years of their life behind exams like UPSC, SSC, etc, and ended up dead broke and',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Senior Software Engineer, IBM'
+    },
+    {
+      img:'./src/assets/Images/AchFirst.jpeg',
+      details: 'Hi All, I am a student of the NOV 2021 batch, I made a good decision by joining the Ineuron classes. A very big thank you to the entire ineuron team And special thanks to Krish Naik and Sudhanshu. It was',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchSecond.jpeg',
+      details: 'Hello everyone I am an undergraduate from SRM University. I got placed in the Tredence Analytics it is all because of the excellent course called full stack data scientist in the ineuron. I enrolled the',
+      name:'sai krishna gorantla',
+      companyName:'Data Analyst, Tredence Analytics'
+    },
+    {
+      img:'./src/assets/Images/AchThird.jpeg',
+      details: 'Ineuron.ai came into existence exactly when I needed it the most. It helped me transition into Data science as Senior Data Engineer at blazeclan technologies and with the help of ineuron courses',
+      name:'Dharmendra kumar Yadav',
+      companyName:'Data Scientist Associate, Cognizant'
+    },
+    {
+      img:'./src/assets/Images/AchFourth.jpeg',
+      details: 'Ineuron.ai came into existence exactly when I needed it the most. It helped me transition into Data science as Senior Data Engineer at blazeclan technologies and with the help of ineuron courses',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchFifth.jpeg',
+      details: 'I have studied from krish YouTube videos and ineuron, which helped me to understand the thorough concepts.',
+      name:'Ayushman Misra',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchSixth.jpeg',
+      details: 'Before Joining iNueron FSDS Course i knew nothing about DS. thank you Sudhanshu Kumar For making it possible for a. Guy from Non Technical background to become a Data Scientist',
+      name:'Somesh Chitranshi',
+      companyName:'Data Scientist, NTT Data Services'
+    },
+    {
+      img:'./src/assets/Images/AchSeventh.jpeg',
+      details: 'I started my career as Data Analyst i worked for 3 years as data analyst after that i met with an accident and took rest for 2 years . After 2 years i took training for data scientist from ineuron and',
+      name:'Retin P Kumar',
+      companyName:'AI Engineer, Accenture'
+    },
+    {
+      img:'./src/assets/Images/AchEight.jpeg',
+      details: 'I was just like one of those government job aspirants (without any vision or guidance) who ended up spending years of their life behind exams like UPSC, SSC, etc, and ended up dead broke and',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Senior Software Engineer, IBM'
+    },
+    {
+      img:'./src/assets/Images/AchNine.jpeg',
+      details: 'I have studied from krish YouTube videos and ineuron, which helped me to understand the thorough concepts.',
+      name:'Ayushman Misra',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchTen.jpeg',
+      details: 'Before Joining iNueron FSDS Course i knew nothing about DS. thank you Sudhanshu Kumar For making it possible for a. Guy from Non Technical background to become a Data Scientist',
+      name:'Somesh Chitranshi',
+      companyName:'Data Scientist, NTT Data Services'
+    },
+    {
+      img:'./src/assets/Images/AchEleven.jpeg',
+      details: 'I started my career as Data Analyst i worked for 3 years as data analyst after that i met with an accident and took rest for 2 years . After 2 years i took training for data scientist from ineuron and',
+      name:'Retin P Kumar',
+      companyName:'AI Engineer, Accenture'
+    },
+    {
+      img:'./src/assets/Images/AchTwelve.jpeg',
+      details: 'I was just like one of those government job aspirants (without any vision or guidance) who ended up spending years of their life behind exams like UPSC, SSC, etc, and ended up dead broke and',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Senior Software Engineer, IBM'
+    },
+    {
+      img:'./src/assets/Images/AchFirst.jpeg',
+      details: 'Hi All, I am a student of the NOV 2021 batch, I made a good decision by joining the Ineuron classes. A very big thank you to the entire ineuron team And special thanks to Krish Naik and Sudhanshu. It was',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchSecond.jpeg',
+      details: 'Hello everyone I am an undergraduate from SRM University. I got placed in the Tredence Analytics it is all because of the excellent course called full stack data scientist in the ineuron. I enrolled the',
+      name:'sai krishna gorantla',
+      companyName:'Data Analyst, Tredence Analytics'
+    },
+    {
+      img:'./src/assets/Images/AchThird.jpeg',
+      details: 'Ineuron.ai came into existence exactly when I needed it the most. It helped me transition into Data science as Senior Data Engineer at blazeclan technologies and with the help of ineuron courses',
+      name:'Dharmendra kumar Yadav',
+      companyName:'Data Scientist Associate, Cognizant'
+    },
+    {
+      img:'./src/assets/Images/AchFourth.jpeg',
+      details: 'Ineuron.ai came into existence exactly when I needed it the most. It helped me transition into Data science as Senior Data Engineer at blazeclan technologies and with the help of ineuron courses',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchFifth.jpeg',
+      details: 'I have studied from krish YouTube videos and ineuron, which helped me to understand the thorough concepts.',
+      name:'Ayushman Misra',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchSixth.jpeg',
+      details: 'Before Joining iNueron FSDS Course i knew nothing about DS. thank you Sudhanshu Kumar For making it possible for a. Guy from Non Technical background to become a Data Scientist',
+      name:'Somesh Chitranshi',
+      companyName:'Data Scientist, NTT Data Services'
+    },
+    {
+      img:'./src/assets/Images/AchSeventh.jpeg',
+      details: 'I started my career as Data Analyst i worked for 3 years as data analyst after that i met with an accident and took rest for 2 years . After 2 years i took training for data scientist from ineuron and',
+      name:'Retin P Kumar',
+      companyName:'AI Engineer, Accenture'
+    },
+    {
+      img:'./src/assets/Images/AchEight.jpeg',
+      details: 'I was just like one of those government job aspirants (without any vision or guidance) who ended up spending years of their life behind exams like UPSC, SSC, etc, and ended up dead broke and',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Senior Software Engineer, IBM'
+    },
+    {
+      img:'./src/assets/Images/AchNine.jpeg',
+      details: 'I have studied from krish YouTube videos and ineuron, which helped me to understand the thorough concepts.',
+      name:'Ayushman Misra',
+      companyName:'Statistician 2, Epsilon'
+    },
+    {
+      img:'./src/assets/Images/AchTen.jpeg',
+      details: 'Before Joining iNueron FSDS Course i knew nothing about DS. thank you Sudhanshu Kumar For making it possible for a. Guy from Non Technical background to become a Data Scientist',
+      name:'Somesh Chitranshi',
+      companyName:'Data Scientist, NTT Data Services'
+    },
+    {
+      img:'./src/assets/Images/AchEleven.jpeg',
+      details: 'I started my career as Data Analyst i worked for 3 years as data analyst after that i met with an accident and took rest for 2 years . After 2 years i took training for data scientist from ineuron and',
+      name:'Retin P Kumar',
+      companyName:'AI Engineer, Accenture'
+    },
+    {
+      img:'./src/assets/Images/AchTwelve.jpeg',
+      details: 'I was just like one of those government job aspirants (without any vision or guidance) who ended up spending years of their life behind exams like UPSC, SSC, etc, and ended up dead broke and',
+      name:'SUNIL RAMESH DODDAMANI',
+      companyName:'Senior Software Engineer, IBM'
+    },
   ]
 
   const req = "Are you a recruiter?"
@@ -443,10 +750,11 @@ function App() {
 
   return (
     <div className='overflow-x-hidden'>
-    {/* <Cource showCaseData={showCaseData} headerData={headerData} inp = "noe" img="./src/assets/Images/PWSkills-logo.png" btnstyle={btnstyles} mystyle={mystyle} login="Login/Register"  coursesData={coursesData} ecosystemData = {ecosystemData} OurAchivementData={OurAchivementData} /> */}
+    {/* <Cource showCaseData={showCaseData} headerData={headerData} inp = "noe" img="./src/assets/Images/PWSkills-logo.png" btnstyle={btnstyles} mystyle={mystyle} login="Login/Register"  coursesData={coursesData} ecosystemData = {ecosystemData} OurAchivementData={OurAchivementData} freqAskQus={freqAskQus} /> */}
     {/* <PWSkillsLab headerData={headerData} inp = "none" img={img} btnstyle={btnstyle} mystyle={mystyle} login="Login" dhinchakLabData={dhinchakLabData}/> */}
     {/* <JobPortal navData={navData} staircaseData={staircaseData} req = {req} companies={companies} jobCat={jobCat} jobData={jobData}/> */}
-    <BecomeAnAffiliate navData={navData}/>
+    {/* <BecomeAnAffiliate navData={navData}/> */}
+    <HallOfFame achiversData={achiversData} achPeopleData = {achPeopleData}/>
     </div>
   )
 }
