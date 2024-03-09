@@ -1,10 +1,19 @@
 import React from "react";
+import {Typewriter,Cursor, useTypewriter} from 'react-simple-typewriter'
 
 const Hero = () => {
+  const [text] = useTypewriter({
+    words:['PRACTICAL','AFFORDABLE','EASY'],
+    loop:{},
+    typeSpeed:200,
+    deleteSpeed:170,
+    
+  })
   return (
     <div className="px-[4vw] relative  sm:mt-4 min-h-[72vh] flex flex-col-reverse  justify-between items-center gap-[30vh]  w-screen sm:flex-row">
       <div className="w-[60vw]  flex flex-col gap-8">
-        <h2 className="sm:text-5xl text-3xl text-center sm:text-left font-semibold mt-8">Upscaling Made PRACTICAL <br />  With PW Skills</h2>
+        <h2 className="sm:text-5xl text-3xl text-center sm:text-left font-semibold mt-8">Upscaling Made <br /> <span className="text-[#E97862]">
+          <span>&lt;</span>{text}<Cursor/>&gt;</span> <br />  With PW Skills</h2>
         <p>
           PW Skills is your one-stop-shop for upscaling. Get maximum value for
           time and resources you invest, with job-ready courses &

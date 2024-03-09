@@ -12,7 +12,7 @@ const HOFPeople = ({achPeopleData}) => {
          
 
          {achPeopleData.map((elem, idx)=> <div key={idx} className="w-[88vw] transition-all		 hover:scale-105	 sm:w-[30vw] relative h-[320px] rounded-xl bg-[#171C24]">
-              <img className='rounded-full h-36 absolute -top-20 left-[150px] border-[4px] border-[#5A4BDA]' src={elem.img} alt="img" />
+              <img className='rounded-full h-36 absolute left-1/2 -translate-y-1/2 -translate-x-1/2 border-[4px] border-[#5A4BDA]' src={elem.img} alt="img" />
               <p className='mt-20 w-[80%] mx-auto'>{elem.details}</p>
 
               <p className='text-center text-xl font-bold mt-10'>{elem.name}</p>

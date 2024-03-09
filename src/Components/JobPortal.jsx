@@ -10,7 +10,10 @@ import Recruiter from './Recruiter'
 import PostingJob from './PostingJob'
 import Footer from './Footer'
 
+
 const JobPortal = ({navData, req,  companies, jobCat,jobData}) => {
+
+ 
   return (
    
     <div>

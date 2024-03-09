@@ -5,6 +5,9 @@ import PWSkillsLab from './Components/PWSkillsLab'
 import JobPortal from './Components/JobPortal'
 import BecomeAnAffiliate from './Components/BecomeAnAffiliate'
 import HallOfFame from './Components/HallOfFame'
+import Guiding from './Components/Guiding'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Login from './Components/Login'
 
 function App() {
   const showCaseData = [
@@ -115,6 +118,116 @@ function App() {
       img: './src/assets/Images/unac.png',
 
     },
+    {
+      img: './src/assets/Images/wipro.png',
+    },
+    {
+      img: './src/assets/Images/tata.png',
+     
+    },
+    {
+      img: './src/assets/Images/verizo.png',
+
+    },
+    {
+      img: './src/assets/Images/Swigy.png',
+
+    },
+    {
+      img: './src/assets/Images/unac.png',
+
+    },
+  ]
+  
+  const successData = [
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'100%',
+      name:'Muzzammil Afridi',
+      role:'Web Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
   ]
 
   const headerData = [
@@ -201,10 +314,11 @@ function App() {
   const navData = [
     {
 
-      first:"Home",
-      second:"Seaech Jobs",
-      third:"Applied Jobs",
-      forth:"Mock Interview",
+      first:"Cources",
+      second:"PW Skils Lab",
+      third:"Job Portal",
+      forth:"Become an Affliate",
+      sixth:'Hall of Fame',
     }
   ]
 
@@ -749,12 +863,32 @@ function App() {
   };
 
   return (
-    <div className='overflow-x-hidden'>
-    {/* <Cource showCaseData={showCaseData} headerData={headerData} inp = "noe" img="./src/assets/Images/PWSkills-logo.png" btnstyle={btnstyles} mystyle={mystyle} login="Login/Register"  coursesData={coursesData} ecosystemData = {ecosystemData} OurAchivementData={OurAchivementData} freqAskQus={freqAskQus} /> */}
-    {/* <PWSkillsLab headerData={headerData} inp = "none" img={img} btnstyle={btnstyle} mystyle={mystyle} login="Login" dhinchakLabData={dhinchakLabData}/> */}
-    {/* <JobPortal navData={navData} staircaseData={staircaseData} req = {req} companies={companies} jobCat={jobCat} jobData={jobData}/> */}
-    {/* <BecomeAnAffiliate navData={navData}/> */}
-    <HallOfFame achiversData={achiversData} achPeopleData = {achPeopleData}/>
+    <div className='overflow-x-clip'>
+
+
+    <BrowserRouter>
+        <Routes>
+              <Route path='/' element={<Cource showCaseData={showCaseData} headerData={headerData} successData = {successData} inp = "noe" img="./src/assets/Images/PWSkills-logo.png" btnstyle={btnstyles} mystyle={mystyle} login="Login/Register"  coursesData={coursesData} ecosystemData = {ecosystemData} OurAchivementData={OurAchivementData} freqAskQus={freqAskQus} />
+}></Route>
+              <Route path='/pwskillslab' element={    <PWSkillsLab headerData={headerData} inp = "none" img={img} btnstyle={btnstyle} mystyle={mystyle} login="Login" dhinchakLabData={dhinchakLabData}/>
+}></Route>
+              <Route path='/jobportal' element={    <JobPortal navData={navData} staircaseData={staircaseData} req = {req} companies={companies} jobCat={jobCat} jobData={jobData}/>
+}></Route>
+              <Route path='/becomeanaffliate' element={    <BecomeAnAffiliate navData={navData}/>
+}></Route>
+              <Route path='/halloffame' element={    <HallOfFame achiversData={achiversData} achPeopleData = {achPeopleData}/>
+}></Route>
+
+  <Route path='/login' element={<Login/>}/>
+        </Routes>
+    </BrowserRouter>
+
+
+
+
+
+
+   
     </div>
   )
 }

@@ -12,7 +12,7 @@ import Footer from './Footer'
 
 
 
-function Cource({showCaseData, coursesData, ecosystemData,OurAchivementData, headerData,inp,img, login,btnstyle,mystyle,freqAskQus}) {
+function Cource({showCaseData, coursesData, ecosystemData,OurAchivementData, successData, headerData,inp,img, login,btnstyle,mystyle,freqAskQus}) {
   return (
     <div className='bg-[#FCFCFC]'>
      <Header headerData = {headerData} inp={inp} img = {img} login={login} mystyle={mystyle} btnstyle={btnstyle}/>
@@ -22,7 +22,7 @@ function Cource({showCaseData, coursesData, ecosystemData,OurAchivementData, hea
     <Ecosystem ecosystemData={ecosystemData}/>
     <Guiding/>
     <OurAchivement OurAchivementData={OurAchivementData}/>
-    <Succses/>
+    <Succses successData={successData}/>
     <FreqAskQus freqAskQus={freqAskQus}/>
     <Footer/>
     </div>
