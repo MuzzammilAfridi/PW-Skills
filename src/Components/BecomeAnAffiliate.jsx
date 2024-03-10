@@ -19,28 +19,41 @@ const BecomeAnAffiliate = () => {
 
     const freqAskQus =[
       {
-        qus:'1. How to start this affiliate program?'
+        qus:'1. How to start this affiliate program?',
+        detail:'You need to register by clicking on this link and following the procedure.'
       },
       {
-        qus:'2. Where can I promote affiliate link?'
+        qus:'2. Where can I promote affiliate link?',
+        detail:'You have complete liberty of promoting your affiliate link as per your will, word of mouth,social media or door to door sales. The choice is yours.'
+
       },
       {
-        qus:'3. Which products of PW Skills can I earn a referral commission from?'
+        qus:'3. Which products of PW Skills can I earn a referral commission from?',
+        detail:'You need to register by clicking on this link and following the procedure.'
+
       },
       {
-        qus:'4. Will I get referral earnings even if I make only 1 sale?'
+        qus:'4. Will I get referral earnings even if I make only 1 sale?',
+        detail:'You need to register by clicking on this link and following the procedure.'
+
         
       },
       {
-        qus:'5. Is there any maximum limit for referral earning?'
+        qus:'5. Is there any maximum limit for referral earning?',
+        detail:'You need to register by clicking on this link and following the procedure.'
+
         
       },
       {
-        qus:'6. If someone enrolls for a yearly subscription will I get the commission every year?'
+        qus:'6. If someone enrolls for a yearly subscription will I get the commission every year?',     
+        detail:'You need to register by clicking on this link and following the procedure.'
+
         
       },
       {
-        qus:'7. How do I earn a bonus?'
+        qus:'7. How do I earn a bonus?',
+        detail:'You need to register by clicking on this link and following the procedure.'
+
         
       },
     ]

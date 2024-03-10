@@ -149,9 +149,33 @@ function App() {
 
     },
     {
-      increment:'100%',
-      name:'Muzzammil Afridi',
-      role:'Web Developer',
+      increment:'50%',
+      name:'Asif Iqbal',
+      role:'SDE',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'450%',
+      name:'Rehan Tahir',
+      role:'Android Developer',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'600%',
+      name:'Md Fahim Ahmad',
+      role:'Data Analytic',
+      imgFrom:'./src/assets/Images/Swigy.png',
+      imgTo:'./src/assets/Images/redbus.png'
+
+    },
+    {
+      increment:'60%',
+      name:'Bibek ____',
+      role:'Frontend Developer',
       imgFrom:'./src/assets/Images/Swigy.png',
       imgTo:'./src/assets/Images/redbus.png'
 
@@ -164,46 +188,7 @@ function App() {
       imgTo:'./src/assets/Images/redbus.png'
 
     },
-    {
-      increment:'100%',
-      name:'Muzzammil Afridi',
-      role:'Web Developer',
-      imgFrom:'./src/assets/Images/Swigy.png',
-      imgTo:'./src/assets/Images/redbus.png'
-
-    },
-    {
-      increment:'100%',
-      name:'Muzzammil Afridi',
-      role:'Web Developer',
-      imgFrom:'./src/assets/Images/Swigy.png',
-      imgTo:'./src/assets/Images/redbus.png'
-
-    },
-    {
-      increment:'100%',
-      name:'Muzzammil Afridi',
-      role:'Web Developer',
-      imgFrom:'./src/assets/Images/Swigy.png',
-      imgTo:'./src/assets/Images/redbus.png'
-
-    },
-    {
-      increment:'100%',
-      name:'Muzzammil Afridi',
-      role:'Web Developer',
-      imgFrom:'./src/assets/Images/Swigy.png',
-      imgTo:'./src/assets/Images/redbus.png'
-
-    },
-    {
-      increment:'100%',
-      name:'Muzzammil Afridi',
-      role:'Web Developer',
-      imgFrom:'./src/assets/Images/Swigy.png',
-      imgTo:'./src/assets/Images/redbus.png'
-
-    },
+   ,
     {
       increment:'100%',
       name:'Muzzammil Afridi',
@@ -526,20 +511,23 @@ function App() {
 
   const freqAskQus = [
     {
-      qus:'I need to purchase a course. Whom should I contact ?'
+      qus:'I need to purchase a course. Whom should I contact ?',
+      detail:'PW Skills operates a strict no-refunds policy for all purchased paid courses. Once a course purchase is confirmed, payment cannot be refunded. This policy applies to all courses, irrespective of the price, duration or the learners progress within the course.'
     },
     {
-      qus:'I am not able to view my enrolled course. What to do/whom to contact ?'
+      qus:'I am not able to view my enrolled course. What to do/whom to contact ?',
+      detail:'Contact our counselors through the chat support on our website. Look for the chat option on the bottom right of the Homepage. Name the course you’re interested in, and the counseling team will guide you through the admission process'
     },
     {
-      qus:'What is an experience portal ? How to use it ?'
+      qus:'What is an experience portal ? How to use it ?',
+      detail:'To access your enrolled course, ensure you have logged in at learn.pwskills.com. If the course is still not visible, email your payment receipt to support@pwskills.com for assistance within 24 hours'
     },
     {
-      qus:'How to get Placements and Job assistance ?'
-      
+      qus:'How to get Placements and Job assistance ?',
+      detail:'Our experience portal offers real-time industrial projects for students and professionals. These unpaid, remote, and self-paced internships provide valuable experience. Choose and complete as many projects as you like to receive an internship experience letter. Students as well as working professionals can do these internships'
     }
   ]
-
+  
   const achiversData = [
     {
       img:'./src/assets/Images/accenture.webp'
@@ -836,6 +824,9 @@ function App() {
       companyName:'Senior Software Engineer, IBM'
     },
   ]
+
+
+
 
   const req = "Are you a recruiter?"
 

@@ -44,12 +44,12 @@ const Header = ({headerData, inp,img, login,btnstyle,mystyle}) => {
       }
 
 {isOpen && (
-  <div className='flex flex-col text-center'>
-    <NavLink className='hover:bg-cyan-800 py-2 rounded-xl' to='/'>Cource</NavLink>
-    <NavLink className='hover:bg-cyan-800 py-2 rounded-xl' to='/pwskillslab'>PW Skills Lab</NavLink>
-    <NavLink className='hover:bg-cyan-800 py-2 rounded-xl' to='/jobportal'>Job Portal</NavLink>
-    <NavLink className='hover:bg-cyan-800 py-2 rounded-xl' to='/becomeanaffliate'>Become an Affliate</NavLink>
-    <NavLink className='hover:bg-cyan-800 py-2 rounded-xl' to='/halloffame'>Hall of Fame</NavLink>
+  <div className='flex flex-col text-start '>
+    <NavLink className='hover:bg-gray-200 p-2 rounded-xl' to='/'>Cource</NavLink>
+    <NavLink className='hover:bg-gray-200 p-2 rounded-xl' to='/pwskillslab'>PW Skills Lab</NavLink>
+    <NavLink className='hover:bg-gray-200 p-2 rounded-xl' to='/jobportal'>Job Portal</NavLink>
+    <NavLink className='hover:bg-gray-200 p-2 rounded-xl' to='/becomeanaffliate'>Become an Affliate</NavLink>
+    <NavLink className='hover:bg-gray-200 p-2 rounded-xl' to='/halloffame'>Hall of Fame</NavLink>
    
   </div>
 )}
