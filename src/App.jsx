@@ -6,7 +6,7 @@ import JobPortal from './Components/JobPortal'
 import BecomeAnAffiliate from './Components/BecomeAnAffiliate'
 import HallOfFame from './Components/HallOfFame'
 import Guiding from './Components/Guiding'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {HashRouter, Routes, Route} from 'react-router-dom'
 import Login from './Components/Login'
 
 function App() {
@@ -857,9 +857,9 @@ function App() {
     <div className='overflow-x-clip'>
 
 
-    <BrowserRouter basename='/PW-Skills'>
+    <HashRouter >
         <Routes>
-              <Route path='/PW-Skills' element={<Cource showCaseData={showCaseData} headerData={headerData} successData = {successData} inp = "noe" img="./src/assets/Images/PWSkills-logo.png" btnstyle={btnstyles} mystyle={mystyle} login="Login/Register"  coursesData={coursesData} ecosystemData = {ecosystemData} OurAchivementData={OurAchivementData} freqAskQus={freqAskQus} />
+              <Route path='/' element={<Cource showCaseData={showCaseData} headerData={headerData} successData = {successData} inp = "noe" img="./src/assets/Images/PWSkills-logo.png" btnstyle={btnstyles} mystyle={mystyle} login="Login/Register"  coursesData={coursesData} ecosystemData = {ecosystemData} OurAchivementData={OurAchivementData} freqAskQus={freqAskQus} />
 }></Route>
               <Route path='/pwskillslab' element={    <PWSkillsLab headerData={headerData} inp = "none" img={img} btnstyle={btnstyle} mystyle={mystyle} login="Login" dhinchakLabData={dhinchakLabData}/>
 }></Route>
@@ -872,7 +872,7 @@ function App() {
 
   <Route path='/login' element={<Login/>}/>
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
 
 
